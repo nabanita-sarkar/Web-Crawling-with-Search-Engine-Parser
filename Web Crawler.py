@@ -1,7 +1,9 @@
 import search_engine_parser
 from search_engine_parser import YahooSearch, GoogleSearch, BingSearch, AolSearch, BaiduSearch, DuckDuckGoSearch
 
-search_args = ('web crawling king', 1)
+search = input('Enter your search query: ')
+
+search_args = (search, 1)
 gsearch = GoogleSearch()
 ysearch = YahooSearch()
 bsearch = BingSearch()
@@ -33,7 +35,6 @@ for i in range(10):
   print(aresults["links"][i])
   print(aresults["descriptions"][i])
 
-for i in range (5):
   print(bresults["titles"][i])
   print(bresults["links"][i])
   print(bresults["descriptions"][i])
